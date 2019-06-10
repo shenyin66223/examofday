@@ -1,7 +1,8 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <header>hello world</header>
     <router-view/>
+    <footer>尾部</footer>
   </div>
 </template>
 
@@ -12,12 +13,25 @@ export default {
 </script>
 
 <style>
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  width: 100%;
+  height: 100%;
+}
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+header,footer{
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
